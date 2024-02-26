@@ -64,6 +64,24 @@ let setTheme = (theme) => {
 
   localStorage.setItem("theme", theme);
 
+  // Let external links open in new tab
+  let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
+  for (let i = 0; i < jupyterNotebooks.length; i++) {
+    let bodyElement = jupyterNotebooks[i].getElementsByTagName("iframe")[0].contentWindow.document.body;
+    // Get all <a> elements in the bodyElement
+    var links = bodyElement.getElementsByTagName("a");
+
+    // Loop through each <a> element
+    for (var i = 0; i < links.length; i++) {
+      // Check if the <a> element has an 'href' attribute
+      if (links[i].getAttribute("href")) {
+        // Set the 'target' attribute to '_blank' to open the link in a new tab/window
+        links[i].setAttribute("target", "_blank");
+      }
+    }
+  }
+
+
   // Updates the background of medium-zoom overlay.
   if (typeof medium_zoom !== "undefined") {
     medium_zoom.update({
