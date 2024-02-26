@@ -72,11 +72,11 @@ let setTheme = (theme) => {
     var links = bodyElement.getElementsByTagName("a");
 
     // Loop through each <a> element
-    for (var i = 0; i < links.length; i++) {
+    for (var j = 0; j < links.length; j++) {
       // Check if the <a> element has an 'href' attribute
-      if (links[i].getAttribute("href")) {
+      if (links[j].getAttribute("href")) {
         // Set the 'target' attribute to '_blank' to open the link in a new tab/window
-        links[i].setAttribute("target", "_blank");
+        links[j].setAttribute("target", "_blank");
       }
     }
   }
