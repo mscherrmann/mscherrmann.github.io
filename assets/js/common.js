@@ -50,21 +50,4 @@ $(document).ready(function () {
       });
     }
   });
-
-  // Let external links open in new tab
-  let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
-  for (let i = 0; i < jupyterNotebooks.length; i++) {
-    let bodyElement = jupyterNotebooks[i].getElementsByTagName("iframe")[0].contentWindow.document.body;
-    // Get all <a> elements in the bodyElement
-    var links = bodyElement.getElementsByTagName("a");
-
-    // Loop through each <a> element
-    for (var j = 0; j < links.length; j++) {
-      // Check if the <a> element has an 'href' attribute
-      if (links[j].getAttribute("href")) {
-        // Set the 'target' attribute to '_blank' to open the link in a new tab/window
-        links[j].setAttribute("target", "_blank");
-      }
-    }
-  }
 });
