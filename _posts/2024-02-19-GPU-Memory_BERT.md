@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understand GPU Memory Usage for Language Model Fine-Tuning
-date: 2024-02-19 15:00:00+0100
+date: 2024-02-26 15:00:00+0100
 description:
 tags:
 categories: Insights
