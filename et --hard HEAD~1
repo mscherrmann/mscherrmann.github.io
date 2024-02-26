@@ -1,0 +1,457 @@
+[33mcommit 1782aea3e2cbf68d8c2b81e5eedb2fd5ad0de9b5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: mscherrmann <mscherrmann@outlook.de>
+Date:   Mon Feb 26 10:36:45 2024 +0100
+
+    Copy files from old repo
+
+[33mcommit d6747723df5820cf6b9f222f934e1434d80842a6[m
+Author: mscherrmann <mscherrmann@outlook.de>
+Date:   Mon Feb 26 10:00:20 2024 +0100
+
+    Remove mini_racer from Gemfile
+
+[33mcommit bfc402e11049fd318b33a01bfcbc979b0748cea2[m
+Author: mscherrmann <mscherrmann@outlook.de>
+Date:   Mon Feb 26 09:54:20 2024 +0100
+
+    Initial changes
+
+[33mcommit b607e580adbf2b96194dce79146f8aa201016da3[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Maksym Zub <kroistsmeh@gmail.com>
+Date:   Thu Feb 22 18:43:42 2024 +0100
+
+    Fixed broken latex in _posts/2015-10-20-math.md (#2219)
+    
+    Latex math is currently broken in
+    [_posts/2015-10-20-math.md](https://alshedivat.github.io/al-folio/blog/2015/math/)
+    . Fixed it by replacing starts with underscore
+    
+    ---------
+    
+    Co-authored-by: George <31376482+george-gca@users.noreply.github.com>
+
+[33mcommit 9f4d6d26be5669876b24208e0d33f0a0b7008c04[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Mon Feb 19 12:33:46 2024 -0300
+
+    Fixed coauthors examples in CUSTOMIZE
+
+[33mcommit e430a8949c1fe687ded81fac7786c2872f98f290[m
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Wed Feb 14 17:42:02 2024 +0000
+
+    Lighthouse-Badger[bot]: Results Added
+
+[33mcommit 6e215a1cdcb23d6a63e5973c4d07274e4a6c80cb[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Wed Feb 14 14:37:32 2024 -0300
+
+    Lighthouse fixes (#2199)
+    
+    Our score went down a little bit after the last few changes. Avoiding
+    lazy loading some images (as introduced in #2183), since [it is strongly
+    recommended to omit hero images and other images or iframes that are
+    likely to appear above the fold from being
+    lazy-loaded](https://web.dev/articles/browser-level-lazy-loading-for-cmss#avoid_lazy_loading_above-the-fold_elements).
+    Also added missing `alt` to google scholar field.
+    
+    ---------
+    
+    Signed-off-by: George Araujo <george.gcac@gmail.com>
+
+[33mcommit b316653f3b7843ac1d377974f59e36f4111a6b1c[m
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Wed Feb 14 16:39:10 2024 +0000
+
+    Lighthouse-Badger[bot]: Results Added
+
+[33mcommit 0b84a1237d8da493709e10e216dc8bcbeb29631d[m
+Author: Dr. David Krassnig <96623786+DavidKrassnig@users.noreply.github.com>
+Date:   Wed Feb 14 17:30:26 2024 +0100
+
+    Added/Improved Formatting for Checkboxes (#2191)
+    
+    A proposed solution for #2190. Padding is added such that I considered
+    it aesthetically pleasing and the bullet points in front of the check
+    marks were removed.
+    
+    ---------
+    
+    Co-authored-by: George <31376482+george-gca@users.noreply.github.com>
+
+[33mcommit 5df7a6aab08dce42375d31a3d7add72fbd5a101a[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Wed Feb 14 12:58:52 2024 -0300
+
+    Changed lazy loading in _config.yml
+
+[33mcommit f067edc69e4d06ee8c9b7b8523e99c28d80297d0[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Wed Feb 14 12:58:28 2024 -0300
+
+    Changed lazy loading in figure.liquid
+
+[33mcommit 40b22ff27497593e7e81a58432a8cb910781d4d8[m
+Author: Ethan Olesinski <47125809+eolesinski@users.noreply.github.com>
+Date:   Wed Feb 14 10:54:44 2024 -0500
+
+    fix author spacing (#2197)
+    
+    This PR fixes issue https://github.com/alshedivat/al-folio/issues/2185
+    and addresses discussion
+    https://github.com/alshedivat/al-folio/discussions/2153.
+    
+    - removes leading whitespace before commas in author list
+    - fixes author spacing
+
+[33mcommit 2a056fe68ecf4f07a3a47a0735bb0cdb76a187b7[m
+Author: ZL Asica <40444637+ZL-Asica@users.noreply.github.com>
+Date:   Tue Feb 13 21:41:14 2024 -0800
+
+    Implement Default Lazy Loading for Images with Configurable Option (#2183)
+    
+    This PR introduces an enhancement to the site's image-loading strategy
+    by implementing lazy loading as the default behavior for all images. The
+    motivation behind this change is to improve the site's load times.
+    
+    **Changes:**
+    1. **Default Lazy Loading:** By `default`, all images will now have the
+    `loading="lazy"` attribute.
+    
+    2. **Configurable Option in `_config.yml`:** Added a new configuration
+    option under `lazy_loading_images.enable`.
+    
+    3. **Override Capability:** For `specific images` where the user doesn't
+    want lazy loading, they can `override` this by directly setting the
+    `loading attribute` in the `image tag`.
+
+[33mcommit 26fad311db3466829e48181fd5fba74f5415ee72[m
+Author: Furkan Akkurt <71407287+furkanakkurt1335@users.noreply.github.com>
+Date:   Wed Feb 14 08:36:30 2024 +0300
+
+    remove the space in names of "site" (#2188)
+    
+    I removed the spaces between the first, middle and last names in the
+    header.
+    
+    It's just my preference, I don't know if it would be accepted but I have
+    done this for my own page using this repository as a template.
+
+[33mcommit 0f0feb17be62a36afa138e912a7cd938ceb4feb0[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Tue Feb 13 19:05:01 2024 -0300
+
+    Fixed related publications appearing in toc (#2196)
+    
+    Fixes #2192
+    
+    ---------
+    
+    Signed-off-by: George Araujo <george.gcac@gmail.com>
+
+[33mcommit 9794c625b699c9201c7c6a956e8b7d94e4665f64[m
+Author: Eric Slyman (they/them) <slymane@oregonstate.edu>
+Date:   Tue Feb 13 12:34:43 2024 -0800
+
+    Add academic community example (#2195)
+    
+    Adds [https://ericslyman.com/](https://ericslyman.com/) to the list of
+    academic community examples.
+
+[33mcommit b4e423286b30bddaf83905c8b4c89f6ae46b545f[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Tue Feb 13 13:56:13 2024 -0300
+
+    Fixed bug when number has , on scholar citations
+
+[33mcommit a0bcaaf13fe8ce455b90ea7c7255ae2936f34e15[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Tue Feb 13 13:47:42 2024 -0300
+
+    Added support for google scholar citations (#2193)
+    
+    Closes #1809, but there are caveats:
+    1 - it only works at build time, which means it won't update the numbers
+    unless you build your site again
+    2 - Google might block the request if it receives lots of it, failing
+    the whole process.
+    
+    This is how it looks like when it can fetch the information:
+    
+    ![Screenshot from 2024-02-13
+    00-37-52](https://github.com/alshedivat/al-folio/assets/31376482/646d1f3c-1294-491b-bc13-9013e38918b4)
+    
+    And this when it fails:
+    
+    
+    ![image](https://github.com/alshedivat/al-folio/assets/31376482/516eefff-d394-44ad-8702-8982233f8c4f)
+    
+    Signed-off-by: George Araujo <george.gcac@gmail.com>
+
+[33mcommit 007b5042040e0060f2ed9dbb1ab7c58d32b60bc5[m
+Author: Stavros Kalapothas <stavros@ubinet.gr>
+Date:   Sun Feb 11 21:55:37 2024 +0100
+
+    Update README.md (#2187)
+    
+    adding my page to the README section. Kudos to the dev team!
+
+[33mcommit ef647a6ebd4e8fa7b539f5650491b7b2bd962937[m
+Author: ZL Asica <40444637+ZL-Asica@users.noreply.github.com>
+Date:   Sat Feb 10 17:09:09 2024 -0800
+
+    Update README.md (#2182)
+    
+    Add my acdemic portfolio to the Acdemic section of README.
+
+[33mcommit 7c2e1c2c6cea8e2b5818f31598399afc202a620b[m
+Author: ZL Asica <40444637+ZL-Asica@users.noreply.github.com>
+Date:   Wed Feb 7 10:34:52 2024 -0800
+
+    Fix Image Dimension Styles for Better Responsiveness (#2166)
+    
+    In this pull request, I've made adjustments to the image element's
+    handling of dimension properties. Previously, `min-width`, `min-height`,
+    `max-width`, and `max-height` were incorrectly placed as HTML attributes
+    on the `<img>` tag, which is not supported for these CSS properties.
+    This oversight could lead to issues with image responsiveness and layout
+    stability.
+    
+    Changes:
+    - Moved `min-width`, `min-height`, `max-width`, and `max-height`
+    properties into the `style` attribute of the `<img>` tag. This change
+    ensures that these properties are correctly applied and recognized as
+    CSS properties, enhancing the responsiveness and flexibility of our
+    image displays.
+    - Retained `width` and `height` as attributes on the `<img>` tag to
+    maintain the intrinsic aspect ratio of images and help the browser
+    allocate space before images are fully loaded, improving the page load
+    experience.
+    
+    These adjustments will ensure that our images are more responsive and
+    better adhere to the specified dimensions, improving the overall user
+    experience for the template.
+
+[33mcommit 1ce58650fd065baa5170844cb97a6859b12a2ce4[m
+Author: Ethan Olesinski <47125809+eolesinski@users.noreply.github.com>
+Date:   Tue Feb 6 14:03:52 2024 -0500
+
+    center footer text by default (#2165)
+    
+    This PR changes the footer text on the website (for both the sticky and
+    fixed footer) to be centered by default. This change is based on the
+    discussion post #257.
+
+[33mcommit 4cf657eb54aa66109b9c654873f7610c81dbd4e4[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Mon Feb 5 12:22:24 2024 -0300
+
+    Added jekyll-diagrams error to FAQ (#2162)
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit c39df67d5bea29eb9f37f3328b35a786b4f7a28e[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Mon Feb 5 12:11:33 2024 -0300
+
+    Updated FAQ with old repository information (#2161)
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit ae0c1a62cf7fd7ac4409cc4972db637019dd3d6d[m
+Author: Andrew Boyer <asboyer@gmail.com>
+Date:   Sun Feb 4 15:27:10 2024 -0500
+
+    improved redirect mapping (#2157)
+    
+    In reference to issue:
+    https://github.com/alshedivat/al-folio/discussions/1818
+    
+    Redirect cases were only happening on the surface level, essentially
+    just affecting the links on [blog
+    index](https://alshedivat.github.io/al-folio/blog/page/4/index.htm) and
+    [year tag](https://alshedivat.github.io/al-folio/blog/2022/). However,
+    from the actual
+    [site](https://alshedivat.github.io/al-folio/blog/2022/redirect/), it
+    would automatically redirect to the `base_url` rather than the actual
+    `redirect`.
+    
+    In my update, if `redirect: true`, like it is in `404.md`, redirect
+    behavior is the same, redirecting to the `base_url`. If it is an
+    external link, then the redirect is external. And finally if it is an
+    internal redirect, like it is in
+    https://alshedivat.github.io/al-folio/blog/2022/redirect/, than the
+    redirect is `page.redirect | relative_url`
+
+[33mcommit 18f7307e07a0d9221ba451a22c6ca5c58394a7df[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Tue Jan 30 15:16:15 2024 -0300
+
+    Fixed axe workflow (#2149)
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit e977319dc8a4b8b0b1eb185698edeba4de49489b[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Mon Jan 29 16:52:26 2024 -0300
+
+    Added link to jekyll docs about post file naming
+
+[33mcommit fa5b411b38001ba204e5484062c0a99f174386db[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 20:11:44 2024 -0300
+
+    Adding display swap to Google Fonts
+    
+    Adding suggestion from [Lighthouse results](https://developer.chrome.com/docs/lighthouse/performance/font-display/?utm_source=lighthouse&utm_medium=cli#google_fonts)
+
+[33mcommit f3d3efa09c9760d76075a5e8d8d8092026f2cbc2[m
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Sun Jan 28 23:05:48 2024 +0000
+
+    Lighthouse-Badger[bot]: Results Added
+
+[33mcommit 533798410e36fc3ce1d51ec9c9a62be43d38dc18[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 20:02:15 2024 -0300
+
+    Removing lighthouse_results from broken-links trigger
+
+[33mcommit 2356aea6e4efe048b6bfcf1ad9ce29f18153c006[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 20:01:44 2024 -0300
+
+    Removing lighthouse results from deploy trigger
+
+[33mcommit 3c80fdb6fce744af6dd3d202a0f829c89a9d6122[m
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Sun Jan 28 22:55:56 2024 +0000
+
+    Lighthouse-Badger[bot]: Results Added
+
+[33mcommit 1935a2ace090eb61e335a9690d53269ae0667565[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 19:35:52 2024 -0300
+
+    Avoid deploying site when changes are in README files
+
+[33mcommit 43a3dd9e755d18af79ff0e07bcf7fed797e9a924[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 19:31:18 2024 -0300
+
+    Update FAQ.md with Prettier info
+
+[33mcommit 06bc36762d0172a5e11537563744f8949a146e7c[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 19:10:42 2024 -0300
+
+    Move libs versions to config (#2139)
+    
+    Moved libs versions and hashes to `_config.yml`.
+    
+    Fixes #2067.
+    
+    Deferring everything possible to keep pages loads fast.
+    
+    ---------
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit ef847825fda76f7f6b823f08b2d36d8dbbf427f9[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 12:45:20 2024 -0300
+
+    Support for diff2html (#2133)
+    
+    Added support to display diff code in a prettier way with
+    [diff2html](https://diff2html.xyz/).
+    
+    
+    ![image](https://github.com/alshedivat/al-folio/assets/31376482/5f93b09c-3850-499a-999b-cb0ae13fddae)
+    
+    It displays code like [in this
+    example](https://diff2html.xyz/demo.html).
+    
+    ---------
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit 8e93db5b67b3c3705445e30dd5ac04837749358a[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sun Jan 28 12:42:17 2024 -0300
+
+    Advanced image viewers (#2132)
+    
+    Image slider with [Swiper](https://swiperjs.com/).
+    
+    
+    ![image](https://github.com/alshedivat/al-folio/assets/31376482/9068823c-571a-4d31-8e95-755a40a15ec9)
+    
+    Image comparison slider with
+    [img-comparison-slider](https://img-comparison-slider.sneas.io/).
+    
+    
+    ![image](https://github.com/alshedivat/al-folio/assets/31376482/97812477-c13b-43b1-8f0b-cb098462de3c)
+    
+    ---------
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit 2492ab389b04cb8604fd48e33a39a5e0e56e2117[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sat Jan 27 22:58:40 2024 -0300
+
+    Workflow fix (#2136)
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit f69d99a2aba9a5c61b537aafeadcb304b2468090[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sat Jan 27 22:17:37 2024 -0300
+
+    Closing #2122 (#2135)
+    
+    Added lighthouse badger token info to FAQ
+    
+    ---------
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit 53fb0116de25ce8800cd6b848393fb860674ba2c[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sat Jan 27 18:54:39 2024 -0300
+
+    Added leaflet reference to 2024-01-26-geojson-map.md
+
+[33mcommit f6bb6b5dcb4411c539905522f928e2551e523034[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sat Jan 27 11:14:02 2024 -0300
+
+    Vega lite support (#2131)
+    
+    Added support for [vega lite](https://vega.github.io/vega-lite/) charts.
+    
+    
+    ![image](https://github.com/alshedivat/al-folio/assets/31376482/789c14d3-93b6-4d3f-94a6-7cec1f0f0b59)
+    
+    
+    ![image](https://github.com/alshedivat/al-folio/assets/31376482/17f9021c-08c4-4922-9f97-1046b146a965)
+    
+    ---------
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>
+
+[33mcommit 1492cb9c4e3183f09ce6ffcf790ecb432d2585dd[m
+Author: George <31376482+george-gca@users.noreply.github.com>
+Date:   Sat Jan 27 11:06:49 2024 -0300
+
+    GeoJSON support (#2130)
+    
+    Added support for GeoJSON maps.
+    
+    
+    ![image](https://github.com/alshedivat/al-folio/assets/31376482/48e91158-a717-4d01-b6d7-47d45f0580e4)
+    
+    ---------
+    
+    Signed-off-by: George Araújo <george.gcac@gmail.com>

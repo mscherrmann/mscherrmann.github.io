@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <i>neoshare AG</i>
+subtitle: <i>Intermdediate Machine Learning Engineer, neoshare AG</i>
 
 profile:
   align: right
