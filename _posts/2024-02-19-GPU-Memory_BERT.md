@@ -9,15 +9,14 @@ giscus_comments: false
 related_posts: false
 ---
 
-
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/testGPUMemoryBertTraining.ipynb" | relative_url %}
 {% capture notebook_exists %}{% file_exists assets/jupyter/testGPUMemoryBertTraining.ipynb %}{% endcapture %}
 {% if notebook_exists == "true" %}
-    <a href="{{ '/assets/jupyter/testGPUMemoryBertTraining.ipynb' | relative_url }}" download class="download-button">Download Notebook</a>
-    {% jupyter_notebook jupyter_path %}
+<a href="{{ '/assets/jupyter/testGPUMemoryBertTraining.ipynb' | relative_url }}" download class="download-button">Download Notebook</a>
+{% jupyter_notebook jupyter_path %}
 {% else %}
-    <p>Sorry, the notebook you are looking for does not exist.</p>
+<p>Sorry, the notebook you are looking for does not exist.</p>
 {% endif %}
 {:/nomarkdown}
 
